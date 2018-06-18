@@ -1,0 +1,17 @@
+
+.logo{
+    opacity: 0.8;
+    width: 10rem;
+    height: 10rem;
+}
+
+.container{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    float: right;
+}
