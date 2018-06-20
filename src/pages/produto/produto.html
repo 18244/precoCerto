@@ -1,21 +1,23 @@
-<p padding>Lista de Preços para Novalgina
-    <ion-icon name="card"></ion-icon>
-</p>
-
-<ion-item>
-  <ion-label>UltraFarma - R$ 3,00</ion-label>
-  <ion-checkbox color="dark"></ion-checkbox>
-</ion-item>
-<ion-item>
-    <ion-label>Pacheco - R$ 3,00</ion-label>
+<ion-content padding>
+    <ion-icon class="user" name="person"></ion-icon>
+    <p padding>Lista de Preços para Novalgina
+        <ion-icon class="cartao"name="card"></ion-icon>
+    </p>
+    <ion-item>
+    <ion-label>UltraFarma - R$ 3,00</ion-label>
     <ion-checkbox color="dark"></ion-checkbox>
-</ion-item>
-<ion-item>
-    <ion-label>DrogaRaia - R$ 3,00</ion-label>
-    <ion-checkbox color="dark"></ion-checkbox>
-</ion-item>
-<ion-item>
-    <ion-label>Tamoio - R$ 3,00</ion-label>
-    <ion-checkbox color="dark"></ion-checkbox>
-</ion-item>
-<button ion-button type="submit" class="button">Comprar</button>
+    </ion-item>
+    <ion-item>
+        <ion-label>Pacheco - R$ 4,50</ion-label>
+        <ion-checkbox color="dark"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+        <ion-label>DrogaRaia - R$ 4,75</ion-label>
+        <ion-checkbox color="dark"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+        <ion-label>Tamoio - R$ 5,00</ion-label>
+        <ion-checkbox color="dark"></ion-checkbox>
+    </ion-item>
+    <button ion-button type="submit" (click)="onclickCompra()">Comprar</button>
+</ion-content>

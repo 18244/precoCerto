@@ -1,3 +1,4 @@
+import { VendaPage } from './../pages/venda/venda';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
@@ -18,7 +19,8 @@ import { ProdutoPage } from './../pages/produto/produto';
     ContactPage,
     HomePage,
     TabsPage,
-    ProdutoPage
+    ProdutoPage,
+    VendaPage
   ],
   imports: [
   BrowserModule,
@@ -31,7 +33,8 @@ import { ProdutoPage } from './../pages/produto/produto';
     ContactPage,
     HomePage,
     TabsPage,
-    ProdutoPage
+    ProdutoPage,
+    VendaPage
   ],
   providers: [
     StatusBar,

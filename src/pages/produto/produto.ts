@@ -1,5 +1,6 @@
+import { VendaPage } from './../venda/venda';
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, LoadingController } from 'ionic-angular';
 
 @Component({
   selector: 'page-produto',
@@ -7,8 +8,17 @@ import { NavController } from 'ionic-angular';
 })
 export class ProdutoPage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController,public loadingCtrl: LoadingController) {
     
   }
 
-}
+  onclickCompra(){
+    const loader = this.loadingCtrl.create({
+      content: "Carregando...",
+      duration: 500
+    });
+    loader.present();
+    this.navCtrl.push(VendaPage);
+   }
+  }
+
